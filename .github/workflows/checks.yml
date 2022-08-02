@@ -20,11 +20,22 @@ jobs:
                   node-version: 14.x
             - name: ci
               run: npm ci
-            - name: test
-              run: npm test
             - name: format
               run: npm run fix:prettier
+              run: echo "✨ Passed Prettier"
             - name: lint
               run: npm run lint
+              run: echo "📸 Safe Eslint"
+            - name: test
+              run: npm test
+              run: echo "🧪 Tests Passed"
             - name: build
               run: npm run build
+              run: echo "🚀 Safe Build"
+            - name: 'Upload Artifact'
+              uses: actions/upload-artifact@v3
+              with:
+              name: assets-to-download
+              path: ./build/
+              retention-days: 5
+              run: echo "✅ Uploaded Artifacts"
