@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "eslint . --ext js,jsx,ts,tsx --fix",
+    "lint": "eslint src --color"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "typescript": "tsc --project tsconfig.json --noEmit"
+  "typescript": "tsc --project tsconfig.json --noEmit",
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  }
 }
