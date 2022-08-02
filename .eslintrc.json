@@ -1,4 +1,10 @@
 {
+    "settings": {
+        "react": {
+        "pragma": "React",
+        "version": "14.16.0"
+        }
+    },
     "env": {
         "browser": true,
         "es2021": true
