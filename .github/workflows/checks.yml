@@ -38,4 +38,3 @@ jobs:
                 name: assets-to-download
                 path: ./build/
                 retention-days: 5
-                run: echo ✅ Uploaded Artifacts
