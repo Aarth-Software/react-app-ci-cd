@@ -22,20 +22,20 @@ jobs:
               run: npm ci
             - name: format
               run: npm run fix:prettier
-                  echo "✨ Passed Prettier"
+                  echo ✨ Passed Prettier
             - name: lint
               run: npm run lint
-                  echo "📸 Safe Eslint"
+                  echo 📸 Safe Eslint
             - name: test
               run: npm test
-                  echo "🧪 Tests Passed"
+                  echo 🧪 Tests Passed
             - name: build
               run: npm run build
-                  echo "🚀 Safe Build"
+                  echo 🚀 Safe Build
             - name: 'Upload Artifact'
               uses: actions/upload-artifact@v3
               with:
-              name: assets-to-download
-              path: ./build/
-              retention-days: 5
-              run: echo "✅ Uploaded Artifacts"
+                name: assets-to-download
+                path: ./build/
+                retention-days: 5
+                run: echo ✅ Uploaded Artifacts
